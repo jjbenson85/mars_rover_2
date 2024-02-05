@@ -96,4 +96,11 @@ describe("Rover", () => {
     rover.rotate_left();
     expect(rover).toEqual({ x: 0, y: 0, direction: "S" });
   });
+  it("should rotate left north", () => {
+    const rover = new Rover();
+    rover.direction = "N";
+    rover.rotate_left();
+    expect(rover).toEqual({ x: 0, y: 0, direction: "W" });
+  });
+ 
 });

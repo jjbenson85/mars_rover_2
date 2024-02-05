@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "vitest"
+    "test": "vitest",
+    "commit": "sh test.sh"
   },
   "devDependencies": {
     "bun-types": "latest"

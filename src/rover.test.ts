@@ -90,4 +90,10 @@ describe("Rover", () => {
     rover.rotate_left();
     expect(rover).toEqual({ x: 0, y: 0, direction: "E" });
   });
+  it("should rotate left west", () => {
+    const rover = new Rover();
+    rover.direction = "W";
+    rover.rotate_left();
+    expect(rover).toEqual({ x: 0, y: 0, direction: "S" });
+  });
 });

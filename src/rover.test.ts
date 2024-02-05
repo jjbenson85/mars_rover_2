@@ -48,4 +48,11 @@ describe("Rover", () => {
       rover.move_backward();
       expect(rover).toEqual({ x: 0, y: 1, direction: "S" });
     });
+    it("should move backward west", () => {
+      const rover = new Rover();
+      rover.direction = "W";
+      rover.move_backward();
+      expect(rover).toEqual({ x: 1, y: 0, direction: "W" });
+    });
+        
 });

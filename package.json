@@ -2,10 +2,19 @@
   "name": "mars_rover_2",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "vite": "^5.0.12",
+    "vitest": "^1.2.2"
   }
 }

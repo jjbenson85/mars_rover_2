@@ -11,5 +11,11 @@ describe("Rover", () => {
     rover.move_forward();
     expect(rover).toEqual({ x: 0, y: 1, direction: "N" });
   });
+    it("should move forward east", () => {
+      const rover = new Rover();
+      rover.direction = "E";
+      rover.move_forward();
+      expect(rover).toEqual({ x: 1, y: 0, direction: "E" });
+    });
 
 });

@@ -7,4 +7,16 @@ export class Rover {
     this.y = 0;
     this.direction = "N";
   }
+
+  move(command: "F" | "B" | "L" | "R") {
+    if (command === "F") {
+      this.y++;
+    } else if (command === "B") {
+      this.y--;
+    } else if (command === "L") {
+      this.direction = "W";
+    } else if (command === "R") {
+      this.direction = "E";
+    }
+  }
 }

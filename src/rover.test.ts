@@ -1,7 +1,9 @@
 import { describe, it, expect } from "vitest";
+import { Rover } from "./rover";
 
 describe("Rover", () => {
-  it("should pass", () => {
-    expect(true).toBe(true);
+  it("should initialise", () => {
+    const rover = new Rover();
+    expect(rover).toEqual({ x: 0, y: 0, direction: "N" });
   });
 });

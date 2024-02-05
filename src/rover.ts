@@ -8,15 +8,20 @@ export class Rover {
     this.direction = "N";
   }
 
-  move(command: "F" | "B" | "L" | "R") {
-    if (command === "F") {
-      this.y++;
-    } else if (command === "B") {
-      this.y--;
-    } else if (command === "L") {
-      this.direction = "W";
-    } else if (command === "R") {
-      this.direction = "E";
+  move_forward() {
+    switch (this.direction) {
+      case "N":
+        this.y++;
+        break;
+      case "E":
+        this.x++;
+        break;
+      case "S":
+        this.y--;
+        break;
+      case "W":
+        this.x--;
+        break;
     }
   }
 }

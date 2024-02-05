@@ -17,5 +17,11 @@ describe("Rover", () => {
       rover.move_forward();
       expect(rover).toEqual({ x: 1, y: 0, direction: "E" });
     });
+    it("should move forward south", () => {
+      const rover = new Rover();
+      rover.direction = "S";
+      rover.move_forward();
+      expect(rover).toEqual({ x: 0, y: -1, direction: "S" });
+    });
 
 });
